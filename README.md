@@ -4,6 +4,11 @@ Bring aviation-themed trivia to your Twitch stream with this interactive, chat-d
 
 ---
 
+## Install
+- Drag and drop purchased file into the streamerbot import window
+
+---
+
 ## 🎯 Features
 
 - ✅ Over **30+ trivia questions** across aviation-related categories
