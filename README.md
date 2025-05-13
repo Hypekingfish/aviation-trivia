@@ -1,4 +1,3 @@
-
 # ✈️ Aviation Twitch Trivia Script for Streamer.bot
 
 Bring aviation-themed trivia to your Twitch stream with this interactive, chat-driven C# script built for [Streamer.bot](https://streamer.bot)! Perfect for VATSIM streamers, flight simmers, and aviation enthusiasts, this script adds a fun and educational way to engage your viewers.
@@ -52,6 +51,7 @@ You can run trivia in a specific category using:
 
 ```
 !trivia [category]
+
 ```
 
 ---
@@ -61,12 +61,14 @@ You can run trivia in a specific category using:
 ### ✅ Answer Checker
 
 This script checks chat messages during an active trivia question. It compares the user's message against the stored answer list. If correct:
+
 - Announces the winner
 - Increments the user's score
 - Updates a scoreboard of participants
 - Resets `wrongGuesses`
 
 If incorrect:
+
 - Tracks incorrect guesses
 - Gives a hint every 3 wrong answers
 
@@ -77,6 +79,7 @@ Displays the top 5 trivia scorers and shows honorable mentions if the sender isn
 Command: `!triviascores` (or your preferred command)
 
 Variables used:
+
 - `triviaScoreboardUsers` (CSV of usernames)
 - `triviaScore_<user>` (individual scores)
 
@@ -95,39 +98,17 @@ Only accessible to Twitch moderators or the broadcaster.
 ## ✅ Example Output
 
 ```
-🧠 [Trivia: ATC | Medium] First to answer wins: What does the squawk code 7600 mean?
+🧠 [Trivia: Aircraft | Hard] First to answer wins: What does 'TCAS' stand for?
 ```
 
-**Acceptable answers:** `radio failure`, `lost comms`, `lost communications`
+**Correct answer:** `traffic collision avoidance system`
 
 When answered correctly:
 
-
-  `**hypekingfish** got it right first! The correct answer was: traffic collision avoidance system`
-
+**hypekingfish** got it right first! The correct answer was: traffic collision avoidance system
 
 Leaderboard sample output:
 
-```
-🏆 Trivia Leaderboard
-🥇 1st: USERONE — 5 points
-🥈 2nd: USERTWO — 3 points
-🥉 3rd: USERTHREE — 2 points
-4th: USERFOUR — 1 point
-5th: USERFIVE — 1 point
-Total participants: 10
-```
+`Only one participant: hypekingfish — 6 points!  1st: hypekingfish — 6 points Total participants: 1`
 
 ---
-
-## ☕ Support My Work
-
-If you found this script useful and want to support more development:
-
-[https://ko-fi.com/hypekingfish](https://ko-fi.com/hypekingfish)
-
----
-
-## 📡 Read more on GitHub
-
-👉 [github.com/hypekingfish/aviation-trivia](https://github.com/hypekingfish/aviation-trivia)
